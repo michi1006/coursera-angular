@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Module 4</title>
+  </head>
+  <body>
+    <h1>Module 4</h1>
+
+    <!-- <div ng-app='ShoppingList'>
+      <h2>Shopping List With Components</h2>
+      <div id="list" ng-controller='ShoppingListController as list'>
+        <input type="text" ng-model="list.itemName" placeholder="item name">
+        <input type="text" ng-model="list.itemQuantity" placeholder="quantity">
+        <button ng-click="list.addItem();">Add Item</button>
+        <span>{{ list.lastRemoved }}</span>
+
+        <shopping-list
+          items="list.items"
+          title="{{list.title}}"
+          on-remove="list.removeItem(index)"></shopping-list>
+
+      </div>
+
+      <loading-spinner></loading-spinner>
+    </div> -->
+
+    <!-- <div ng-app='RoutingApp'>
+      <div class="tabs">
+        <a ui-sref="tab1" ui-sref-active="activeTab">Tab1</a>
+        <a ui-sref="tab2" ui-sref-active="activeTab">Tab2</a>
+        <button ui-sref="tab2">Tab2</button>
+      </div>
+
+      <ui-view></ui-view>
+
+      <script src="src/tabbed/app.js" charset="utf-8"></script>
+    </div> -->
+
+    <div ng-app="ShoppingList">
+      <ui-view></ui-view>
+    </div>
+
+    </div>
+        <a href="../../index.html">Go back</a>
+    </div>
+
+    <!-- Libraries -->
+    <script src="lib/jquery-3.1.0.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js" charset="utf-8"></script>
+
+    <!-- Modules -->
+    <script src="src/spinner/loadingspinner.module.js" charset="utf-8"></script>
+    <script src="src/shoppinglist/shoppinglist.module.js" charset="utf-8"></script>
+
+    <!-- Module Artifacts -->
+    <script src="src/shoppinglist/shoppinglist.component.js" charset="utf-8"></script>
+    <script src="src/shoppinglist/shoppinglist.controller.js" charset="utf-8"></script>
+    <script src="src/shoppinglist/shoppinglist.factory.js" charset="utf-8"></script>
+    <script src="src/shoppinglist/weightlossfilter.service.js" charset="utf-8"></script>
+
+    <script src="src/spinner/loadingspinner.component.js" charset="utf-8"></script>
+
+    <!-- Modules -->
+    <script src="src/routedshoppinglist/shoppinglist.module.js"></script>
+
+    <!-- Routes -->
+    <script src="src/routedshoppinglist/routes.js"></script>
+
+    <!-- 'ShoppingList' module artifacts -->
+    <script src="src/routedshoppinglist/shoppinglist.component.js"></script>
+    <script src="src/routedshoppinglist/main-shoppinglist.controller.js"></script>
+    <script src="src/routedshoppinglist/item-detail.controller.js" charset="utf-8"></script>
+    <script src="src/routedshoppinglist/shoppinglist.service.js"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+body {
+  font-size: 1.2em;
+}
+#list1, #list2 {
+  float: left;
+}
+#list2 {
+  margin-left: 40px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
+.loading-icon {
+  position: absolute;
+  left: calc(100% / 2);
+  top: 10px;
+}
+
+div.tabs > a, div.tabs > button {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+div.tabs {
+  margin-bottom: 10px;
+}
+
+.activeTab {
+  font-weight: bold;
+}
+
+li[ui-sref]:hover{
+  display: inline-block;
+  cursor: pointer;
+  border: solid black 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+}

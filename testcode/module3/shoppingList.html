@@ -1,0 +1,9 @@
+<h3>Title: {{ dir.myTitle }}</h3>
+<ol>
+  <li ng-repeat="item in dir.items">
+    {{ item.quantity }} boxes of {{ item.name }}
+    <!-- <button ng-click="list.badRemove($index);">Bad Remove Item</button> -->
+    <button ng-click="dir.onRemove({index: $index});">Remove Item</button>
+  </li>
+</ol>
+<div class="error" ng-transclude></div>

@@ -1,0 +1,10 @@
+<div>
+  <ol>
+    <li ng-repeat="item in foundItems"> {{item.ort}} of Bezirk {{item.bezirk}}/{{item.bundesland}}
+      <button ng-click="onRemove({index : $index})" name="button">Remove Item</button>
+    </li>
+  </ol>
+  <div class="error">
+    No data found!
+  </div>
+</div>
