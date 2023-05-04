@@ -26,6 +26,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
     controller: 'MainShoppingListController as mainList',
     resolve: {
       items: ['ShoppingListService', function (ShoppingListService){
+        console.log("resolve");
         return ShoppingListService.getItems();
       }]
     }

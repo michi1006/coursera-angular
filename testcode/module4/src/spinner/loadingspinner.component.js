@@ -29,21 +29,21 @@
     $ctrl.$onInit = function () {
       console.log("On init");
 
-      var cancel = $rootScope.$on('stateChangeStart',
+      var cancel = $rootScope.$on('$stateChangeStart',
       function(event, toState, toParams, fromState, fromParams, options){
         console.log("Start");
         $ctrl.showSpinner = true;
       });
       cancellers.push(cancel);
 
-      cancel = $rootScope.$on('stateChangeSuccess',
+      cancel = $rootScope.$on('$stateChangeSuccess',
       function(event, toState, toParams, fromState, fromParams){
         console.log("Success");
         $ctrl.showSpinner = false;
       });
       cancellers.push(cancel);
 
-      cancel = $rootScope.$on('stateChangeError',
+      cancel = $rootScope.$on('$stateChangeError',
       function(event, toState, toParams, fromState, fromParams, error){
         console.log("Error");
         $ctrl.showSpinner = false;
