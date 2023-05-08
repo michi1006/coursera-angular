@@ -32,6 +32,7 @@
     })
 
     .state('statelist.districtlist', {
+      url: '/{state}',
       templateUrl: 'src/districtlist/templates/districtlist.template.html',
       controller: 'DistrictListController as dCtrl',
       params: {
