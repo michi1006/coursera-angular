@@ -112,7 +112,16 @@ h3.menu-item-title {
   font-style: italic;
 }
 /* END SINGLE CATEGORY PAGE */
+/* START LOGIN */
+.ng-touched.ng-valid {
+  border: 2px green solid;
+}
 
+.ng-touched.ng-invalid {
+  border: 2px red solid;
+}
+
+/* END LOGIN */
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {

@@ -1,0 +1,23 @@
+
+<div class="container">
+  <span ng-if="myCtrl.notRegisteredYet">Not Signed Up Yet. <a ui-sref="public.sign-up">Sign up Now!</a></span>
+
+  <div class="menu-item-tile col-md-6" ng-if="!myCtrl.notRegisteredYet">
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="menu-item-photo">
+          <div>{{myCtrl.user.favDish.short_name}}</div>
+          <img class="img-responsive" width="250" height="150" ng-src="images/menu/{{myCtrl.user.favDish.categoryShortName}}/{{myCtrl.user.favDish.short_name}}.jpg" alt="myCtrl.user.favDish.short_name">
+        </div>
+      </div>
+      <div class="menu-item-description col-sm-7">
+        <h3 class="menu-item-title">{{myCtrl.user.favDish.name}}</h3>
+        <p class="menu-item-details">{{myCtrl.user.favDish.description}}</p>
+      </div>
+    </div>
+    <h3 class="menu-item-title">User: {{myCtrl.user.firstname}} {{myCtrl.user.lastname}}</h3>
+    <h3 class="menu-item-title">E-Mail: {{myCtrl.user.email}}</h3>
+    <h3 class="menu-item-title">Phone: {{myCtrl.user.phone}}</h3>
+    <hr class="visible-xs">
+  </div>
+</div>
