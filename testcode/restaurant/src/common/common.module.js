@@ -2,6 +2,7 @@
     'use strict';
 
     angular.module('common', [])
+      .constant('ApiPath', 'https://coursera-jhu-default-rtdb.firebaseio.com')
       .config(config);
 
     config.$inject = ['$httpProvider']
